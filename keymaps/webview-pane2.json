@@ -1,0 +1,9 @@
+{
+    "atom-workspace": {
+        "ctrl-shift-b": "webview-pane2:open"
+    },
+    ".webview-pane2": {
+        "ctrl-r": "webview-pane2:refresh",
+        "enter": "webview-pane2:go"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "context-menu": {
+        "atom-text-editor": [{
+            "label": "Open Webview",
+            "command": "webview-pane2:open"
+        }],
+        ".tree-view .file": [{
+            "label": "Open Webview",
+            "command": "webview-pane2:open"
+        }],
+        ".tree-view .directory": [{
+            "label": "Open Webview",
+            "command": "webview-pane2:open"
+        }]
+    }
+}

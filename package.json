@@ -1,0 +1,46 @@
+{
+    "name": "webview-pane2",
+    "main": "./lib/main",
+    "version": "1.0.0",
+    "description": "Simple webview pane configurable for local web development",
+    "keywords": [
+        "web",
+        "webview",
+        "web development",
+        "browser"
+    ],
+    "atomTestRunner": "./spec/custom-runner",
+    "activationCommands": {
+        "atom-workspace": "webview-pane2:open",
+        "atom-text-editor": "webview-pane2:open",
+        ".tree-view .file": "webview-pane2:open",
+        ".tree-view .directory": "webview-pane2:open"
+    },
+    "consumedServices": {
+        "tree-view": {
+            "versions": {
+                "^1.0.0": "consumeTreeView"
+            }
+        }
+    },
+    "deserializers": {
+        "WebPane": "deserializeWebPane"
+    },
+    "viewProviders": [
+        "provideWebPaneView"
+    ],
+    "repository": "https://github.com/mrattner/atom-webview-pane2",
+    "license": "MIT",
+    "engines": {
+        "atom": ">=1.7.0 <2.0.0"
+    },
+    "dependencies": {
+        "etch": "^0.14.0",
+        "file-url": "^2.0.2"
+    },
+    "devDependencies": {
+        "atom-jasmine3-test-runner": "^4.1.1",
+        "babel-eslint": "^10.0.1",
+        "eslint": "^5.9.0"
+    }
+}

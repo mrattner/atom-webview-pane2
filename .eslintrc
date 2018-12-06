@@ -1,0 +1,120 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"sourceType": "module"
+	},
+	"globals": {
+		"atom": false
+	},
+	"extends": "eslint:recommended",
+	"rules": {
+		"array-callback-return": "error",
+		"class-methods-use-this": "warn",
+		"consistent-return": "error",
+		"curly": ["error", "multi-line"],
+		"default-case": "error",
+		"dot-notation": "error",
+		"eqeqeq": "error",
+		"guard-for-in": "warn",
+		"jsx-quotes": "off",
+		"max-classes-per-file": ["error", 1],
+		"no-alert": "warn",
+		"no-async-promise-executor": "error",
+		"no-await-in-loop": "error",
+		"no-caller": "error",
+		"no-constant-condition": "error",
+		"no-div-regex": "error",
+		"no-duplicate-imports": "warn",
+		"no-else-return": "warn",
+		"no-empty": "warn",
+		"no-empty-function": "warn",
+		"no-eval": "error",
+		"no-extend-native": "error",
+		"no-extra-bind": "error",
+		"no-floating-decimal": "error",
+		"no-implicit-coercion": "error",
+		"no-implicit-globals": "warn",
+		"no-implied-eval": "error",
+		"no-invalid-this": "error",
+		"no-iterator": "error",
+		"no-labels": "error",
+		"no-lone-blocks": "error",
+		"no-lonely-if": "warn",
+		"no-loop-func": "error",
+		"no-misleading-character-class": "error",
+		"no-mixed-spaces-and-tabs": "off",
+		"no-multi-spaces": "off",
+		"no-new": "error",
+		"no-new-func": "error",
+		"no-new-wrappers": "error",
+		"no-param-reassign": "error",
+		"no-proto": "error",
+		"no-prototype-builtins": "warn",
+		"no-return-assign": ["error", "always"],
+		"no-return-await": "error",
+		"no-script-url": "error",
+		"no-self-compare": "error",
+		"no-sequences": "error",
+		"no-shadow": "error",
+		"no-template-curly-in-string": "error",
+		"no-throw-literal": "error",
+		"no-trailing-spaces": "off",
+		"no-unused-expressions": "warn",
+		"no-unused-vars": "warn",
+		"no-use-before-define": ["error", {
+			"functions": true,
+			"classes": true,
+			"variables": true
+		}],
+		"no-useless-call": "error",
+		"no-useless-computed-key": "error",
+		"no-useless-concat": "warn",
+		"no-useless-constructor": "warn",
+		"no-useless-rename": "error",
+		"no-useless-return": "error",
+		"no-var": "error",
+		"no-void": "error",
+		"object-shorthand": ["warn", "always"],
+		"prefer-arrow-callback": "warn",
+		"prefer-const": "warn",
+		"prefer-destructuring": "warn",
+		"prefer-numeric-literals": "warn",
+		"prefer-object-spread": "warn",
+		"prefer-promise-reject-errors": "warn",
+		"prefer-rest-params": "warn",
+		"prefer-spread": "warn",
+		"prefer-template": "warn",
+		"quotes" : ["error", "single", { "allowTemplateLiterals": true }],
+		"radix": "error",
+		"require-atomic-updates": "error",
+		"require-await": "error",
+		"require-jsdoc": ["warn", { "require": {
+            "FunctionDeclaration": true,
+            "MethodDefinition": true,
+            "ClassDeclaration": true,
+            "ArrowFunctionExpression": false,
+            "FunctionExpression": false
+        }}],
+		"require-yield": "error",
+		"semi": "error",
+		"use-isnan": "error",
+		"valid-jsdoc": "warn",
+		"wrap-iife": "error"
+	},
+	"overrides": [{
+		"files": ["spec/**"],
+		"env": {
+			"jasmine": true
+		}
+	},
+	{
+		"files": ["*-spec.js"],
+		"rules": {
+			"require-jsdoc": "off"
+		}
+	}]
+}

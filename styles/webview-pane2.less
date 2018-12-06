@@ -1,0 +1,41 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.webview-pane2 {
+	webview {
+		height: 100%;
+		background-color: white;
+	}
+
+	button:disabled {
+		pointer-events: none;
+	}
+
+	nav {
+		display: flex;
+		flex-flow: row nowrap;
+
+		button {
+			flex: 0 1 auto;
+		}
+	}
+
+	.icon-input {
+		position: relative;
+		flex: 1 1 auto;
+
+		input {
+			padding-left: 2em;
+		}
+
+		.icon {
+			position: absolute;
+			padding: @component-icon-padding;
+			pointer-events: none;
+			left: 0;
+		}
+	}
+}
