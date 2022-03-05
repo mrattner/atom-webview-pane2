@@ -28,13 +28,15 @@ side-by-side code/webview workflow, rather than for general browsing.
 	the `file://` URL schema, you may need to [percent-encode](2) them.
 
 	Available variables inside the template string:
-		+ `{full_path}`: The absolute filesystem path of the parent directory.
-			(This is probably only useful if you're using the `file://` schema.)
-			+ Example usage: `file://{full_path}/../public`
-		+ `{name_with_ext}`: File or directory name, including file extension.
-			+ Example usage: `http://localhost:8000/resources/{name_with_ext}`
-		+ `{name_no_ext}`: File or directory name without extension.
-			+ Example usage: `https://user@myserver.com/index.php#{name_no_ext}`
+	
+	+ `{full_path}`: The absolute filesystem path of the parent directory.
+		(This is probably only useful if you're using the `file://` schema.)
+		+ Example usage: `file://{full_path}/../public`
+	+ `{name_with_ext}`: File or directory name, including file extension.
+		+ Example usage: `http://localhost:8000/resources/{name_with_ext}`
+	+ `{name_no_ext}`: File or directory name without extension.
+		+ Example usage: `https://user@myserver.com/index.php#{name_no_ext}`
+	
 +	**`homepage`:** URL that new webviews will navigate to upon opening when no
 	URL mapping applies, or if URL mapping is disabled.
 +	**`autoReload`:** Whether to open new webviews with auto-refresh on.
